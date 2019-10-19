@@ -10,8 +10,13 @@ export class EstabelecimentosService {
 
   constructor() { }
 
-  async get() {
+  get() {
     const lista = this.estabelecimento;
+    return lista;
+  }
+
+  getById(id) {
+    const lista = this.estabelecimento.find(x => x.id === id);
     return lista;
   }
 }
