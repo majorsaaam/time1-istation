@@ -14,4 +14,9 @@ export class ProdutoService {
     const lista = this.produto;
     return lista;
   }
+
+  getServicos() {
+    const lista = this.produto.filter(x => x.servico);
+    return lista;
+  }
 }
