@@ -1,20 +1,17 @@
 import { Injectable } from '@angular/core';
 
-const Estabelecimentos = require('../model/estabelecimentos');
+import data from '../models/estabelecimento.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EstabelecimentosService {
+  estabelecimento = data;
+
   constructor() { }
 
   async get() {
-    try {
-      const lista = await Estabelecimentos.find();
-      return lista;
-    }
-    catch (err) {
-        return [];
-    }
+    const lista = this.estabelecimento;
+    return lista;
   }
 }
