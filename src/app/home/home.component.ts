@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PromocaoService } from '../services/Promocao/promocao.service';
+import { EstabelecimentosService } from '../services/Estabelecimentos/estabelecimentos.service';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import { PromocaoService } from '../services/Promocao/promocao.service';
 })
 export class HomeComponent implements OnInit {
   promoServ = new PromocaoService();
+  estabServ = new EstabelecimentosService();
   promos = [];
 
   constructor() {
@@ -18,4 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  empresa(id) {
+    return this.estabServ.getById(id).nome;
+  }
 }

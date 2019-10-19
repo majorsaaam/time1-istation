@@ -9,8 +9,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   constructor() {
   }
-
-  empresa(id) {
-    return this.estabServ.getById(id).nome;
-  }
 }
