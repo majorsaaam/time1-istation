@@ -18,4 +18,9 @@ export class LojaComponent implements OnInit {
   ngOnInit() {
   }
 
+  AddToCart() {
+    let carrinho = document.getElementById("cart-store");
+    carrinho.classList.remove("collapsed-cart");
+  }
+
 }

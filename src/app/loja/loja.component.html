@@ -6,4 +6,35 @@
     <div class="loja_span-gray">
         Promoções disponíveis para você
     </div>
+
+    <div class="loja_list-promos">
+        <div class="panel panel-default loja_list-promos_panel">
+            <div class="panel-body">
+                <h5 class="panel-title">Lava-jato por R$5</h5>
+                <div class="panel-text description-item">No mês de outubro, realize uma limpeza por apenas R$5. Promoção não cumulativa.</div>
+                <div class="row bottom-row">
+                    <div class="col-xs-6">
+                        <div class="price-cart-loja">R$ 5</div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <div class="btn btn-success purchaseButton" (click)="AddToCart()">
+                            <img src="../../assets/addCart-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cart-store" class="hover-addToCart collapsed-cart">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-xs-5 text-cart reset-right-padding-col">1 item(s) no carrinho</div>
+            <div class="col-xs-3 text-cart text-right reset-padding-col">R$ 23,10</div>
+            <div class="col-xs-4">
+                <div class="btn btn-block btn-success">Finalizar</div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,22 @@
+.home_span-gray {
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+    margin-bottom: 7px;
+}
+.home_list-promos_panel {
+    box-shadow: 0px 0px 8px 0px #CACACA;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.home_list-promos_panel .panel-title {
+    font-family: roboto !important;
+    color: #14b0bf;
+}
+.panel-body .panel-text {
+    font-family: roboto-light !important;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.panel-text .distancia-card-home {
+    color: rgb(141, 141, 141);
+}
