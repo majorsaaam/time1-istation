@@ -38,6 +38,8 @@
 .navbar {
     display: flex;
     background-color: #fff;
+    height: 10%;
+    max-height: 50px;
 }
 .navbar-collapse {
     position: absolute;
@@ -64,6 +66,9 @@
     left: 0;
     right: 0;
     background-color: #fff;
+    height: 12%;
+    min-height: 63px;
+    max-height: 65px;
 }
 .menu-mobile-footer {
     display: flex;

@@ -1,5 +1,7 @@
 .container-page {
     margin: 14px;
+    height: 74%;
+    overflow-y: scroll;
 }
 .home_span-gray {
     font-size: 12px;
