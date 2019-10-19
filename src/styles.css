@@ -20,6 +20,11 @@
     overflow: hidden;
     background-color: rgb(245, 245, 245);
 }
+.container-page {
+    margin: 14px;
+    height: 74%;
+    overflow-y: scroll;
+}
 .brand-header {
     color: #14b0bf;
 }
@@ -81,6 +86,9 @@
 }
 .menu-mobile-footer li:not(:last-child) {
     border-right: 1px solid #E4E4E4;
+}
+.menu-mobile-footer li a {
+    display: block;
 }
 .menu-mobile-footer img {
     width: 20px;

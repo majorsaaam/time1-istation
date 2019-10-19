@@ -1,0 +1,10 @@
+.loja_span-title {
+    font-size: 18px;
+    font-family: roboto;
+    color: #000;
+}
+.loja_span-gray {
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+    margin-bottom: 7px;
+}

@@ -1,15 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LojaComponent } from './loja/loja.component';
 import { HomeComponent } from './home/home.component';
 
-const appRoutes: Routes = [
+const rotasApp: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   { path: 'loja', component: LojaComponent }
@@ -23,8 +22,10 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(rotasApp)
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
