@@ -10,4 +10,8 @@ export class AppComponent {
 
   constructor() {
   }
+
+  empresa(id) {
+    return this.estabServ.getById(id).nome;
+  }
 }

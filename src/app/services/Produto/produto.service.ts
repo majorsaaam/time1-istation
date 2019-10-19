@@ -10,7 +10,7 @@ export class ProdutoService {
 
   constructor() { }
 
-  async get() {
+  get() {
     const lista = this.produto;
     return lista;
   }

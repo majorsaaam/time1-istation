@@ -12,7 +12,7 @@ export class GeneralService {
 
   constructor() { }
 
-  async search(text) {
+  search(text) {
     const lista = this.estabelecimento.find(x => x.nome.includes(text));
     const listaProd = this.produto.find(x => x.nome.includes(text));
     const final = [].concat(lista, listaProd);
