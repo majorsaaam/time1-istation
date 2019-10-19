@@ -21,6 +21,8 @@
     "@angular/router": "~8.2.11",
     "bootstrap": "^3.4.1",
     "jquery": "^3.4.1",
+    "mongoose": "^5.7.5",
+    "require": "^2.4.20",
     "rxjs": "~6.4.0",
     "tether": "^1.4.7",
     "tslib": "^1.10.0",

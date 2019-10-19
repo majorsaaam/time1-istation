@@ -15,8 +15,8 @@
 
   <div class="home_list-promos">
     <div class="panel panel-default home_list-promos_panel">
-      <div class="panel-body">
-        <h5 class="panel-title">15% off em qualquer hambúrger</h5>
+      <div *ngFor="let promo of promos" class="panel-body">
+        <h5 class="panel-title">{{promo.msg}}</h5>
         <div class="panel-text">Posto Ipiranga Rodoviaria <span class="distancia-card-home">- a 0.5 km</span></div>
       </div>
     </div>
