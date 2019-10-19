@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "istation-app": {
+    "time1-istation": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "less"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/istation-app",
+            "outputPath": "dist/time1-istation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -67,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "istation-app:build"
+            "browserTarget": "time1-istation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "istation-app:build:production"
+              "browserTarget": "time1-istation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "istation-app:build"
+            "browserTarget": "time1-istation:build"
           }
         },
         "test": {
@@ -93,7 +89,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -115,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "istation-app:serve"
+            "devServerTarget": "time1-istation:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "istation-app:serve:production"
+              "devServerTarget": "time1-istation:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "istation-app"
+  "defaultProject": "time1-istation"
 }
