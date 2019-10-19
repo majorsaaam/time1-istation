@@ -1,18 +1,27 @@
 [
     {
         "id": 1,
-        "valor": 1.00
+        "valor": 1.00,
+        "msg": "R$1 EM COCA COLAS 350ml!"
     },
     {
         "id": 2,
-        "valor": 5.00
+        "valor": 5.00,
+        "msg": "R$5 EM LAVA JATO!"
     },
     {
         "id": 3,
-        "valor": 1.50
+        "valor": 1.50,
+        "msg": "R$1.5 EM SANDUICHES!"
     },
     {
         "id": 4,
-        "valor": 0.08
+        "valor": 0.08,
+        "msg": "R$0.08 EM ADITIVADA!"
+    },
+    {
+        "id": 5,
+        "valor": 3,
+        "msg": "R$3 EM ALGUMACOISA!"
     }
 ]
