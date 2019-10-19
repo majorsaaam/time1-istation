@@ -16,6 +16,10 @@ const EstabelecimentoSchema = new mongoose.Schema({
     loja: {
         type: Boolean,
         default: false
+    },
+    posto: {
+        type: Number,
+        required: false
     }
 });
 
