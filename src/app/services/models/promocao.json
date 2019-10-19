@@ -2,26 +2,29 @@
     {
         "id": 1,
         "valor": 1.00,
-        "msg": "R$1 EM COCA COLAS 350ml!"
+        "msg": "R$1 EM COCA COLAS 350ml!",
+        "estabelecimento": 1,
+        "produto": 2
     },
     {
         "id": 2,
         "valor": 5.00,
-        "msg": "R$5 EM LAVA JATO!"
+        "msg": "R$5 EM LAVA JATO!",
+        "estabelecimento": 1,
+        "produto": 3
     },
     {
         "id": 3,
         "valor": 1.50,
-        "msg": "R$1.5 EM SANDUICHES!"
+        "msg": "R$1.5 EM SANDUICHES!",
+        "estabelecimento": 2,
+        "produto": 8
     },
     {
         "id": 4,
         "valor": 0.08,
-        "msg": "R$0.08 EM ADITIVADA!"
-    },
-    {
-        "id": 5,
-        "valor": 3,
-        "msg": "R$3 EM ALGUMACOISA!"
+        "msg": "R$0.08 EM ADITIVADA!",
+        "estabelecimento": 2,
+        "produto": 11
     }
 ]
