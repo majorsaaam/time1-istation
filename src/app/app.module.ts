@@ -25,7 +25,6 @@ const rotasApp: Routes = [
     RouterModule.forRoot(rotasApp)
   ],
   exports: [
-    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
