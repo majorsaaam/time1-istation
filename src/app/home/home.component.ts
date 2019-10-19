@@ -29,4 +29,12 @@ export class HomeComponent implements OnInit {
   empresa(id) {
     return this.estabServ.getById(id).nome;
   }
+
+  promocao(promo) {
+    if (promo.valor) {
+      return `por R$${promo.valor}`;
+    } else {
+      return promo.msg;
+    }
+  }
 }

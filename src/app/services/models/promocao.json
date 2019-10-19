@@ -1,10 +1,9 @@
 [
     {
         "id": 1,
-        "valor": 1.00,
-        "msg": "R$1 EM COCA COLAS 350ml!",
+        "msg": "Ganhe Coxinha de graça",
         "estabelecimento": 1,
-        "produto": 2
+        "produto": 5
     },
     {
         "id": 2,
