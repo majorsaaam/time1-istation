@@ -20,6 +20,10 @@ const ProdutoSchema = new mongoose.Schema({
     estabelecimento: {
         type: Number,
         required: true
+    },
+    promocao: {
+        type: Number,
+        required: false
     }
 });
 

@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 
-const Produto = require('../model/produto');
+const Estabelecimentos = require('../model/estabelecimentos');
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProdutoService {
+export class EstabelecimentosService {
   constructor() { }
 
   async get() {
     try {
-      const lista = await Produto.find();
+      const lista = await Estabelecimentos.find();
       return lista;
     }
     catch (err) {
