@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { EstabelecimentosService } from '../services/Estabelecimentos/estabelecimentos.service';
 import { ProdutoService } from '../services/Produto/produto.service';
@@ -18,14 +19,20 @@ export class LojaComponent implements OnInit {
   estabelecimento;
   promocao;
 
-  constructor() {
-    this.productId = 5;
-    this.produto = this.produtoServ.getById(this.productId);
-    this.estabelecimento = this.estabServ.getById(this.produto.estabelecimento);
-    this.promocao = this.promoServ.getByProduto(this.produto.id);
+  constructor(public route: ActivatedRoute) {
+    this.route.paramMap.subscribe(param => {
+      this.productId = param['params'].id;
+      this.produto = this.produtoServ.getById(this.productId);
+      this.estabelecimento = this.estabServ.getById(this.produto.estabelecimento);
+      this.promocao = this.promoServ.getByProduto(this.produto.id);
+    })
   }
 
   ngOnInit() {
+  }
+
+  valor() {
+    return this.promocao.valor || this.produto.valor;
   }
 
   AddToCart() {

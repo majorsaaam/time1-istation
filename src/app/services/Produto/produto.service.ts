@@ -16,7 +16,7 @@ export class ProdutoService {
   }
 
   getById(id) {
-    return this.produto.find(x => x.id === id);
+    return this.produto.find(x => x.id == id);
   }
 
   getServicos() {

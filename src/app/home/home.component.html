@@ -14,13 +14,13 @@
   </div>
 
   <div class="home_list-promos">
-    <a routerLink="/loja">
-      <div *ngFor="let promo of promos" class="panel panel-default home_list-promos_panel">
+    <div *ngFor="let promo of promos" class="panel panel-default home_list-promos_panel">
+      <a [routerLink]="['/loja', promo.produto]">
         <div class="panel-body">
           <h5 class="panel-title">{{produto(promo.produto)}} {{promocao(promo)}}</h5>
           <div class="panel-text">{{empresa(promo.estabelecimento)}} <span class="distancia-card-home">- a 0.5 km</span></div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </div>

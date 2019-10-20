@@ -17,7 +17,7 @@ const rotasApp: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  { path: 'loja', component: LojaComponent },
+  { path: 'loja/:id', component: LojaComponent },
   { path: 'carrinho', component: PagamentoCheckoutComponent },
   { path: 'confirmacao', component: ConfirmarPedidoComponent },
   { path: 'avaliacao', component: AvaliacaoComponent },
