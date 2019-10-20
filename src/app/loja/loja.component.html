@@ -1,6 +1,6 @@
 <div class="container-page">
     <div class="loja_span-title">
-        Posto de Luz Ltda.
+        {{estabelecimento.nome}}
     </div>
 
     <div class="loja_span-gray">
@@ -10,11 +10,11 @@
     <div class="loja_list-promos">
         <div class="panel panel-default loja_list-promos_panel">
             <div class="panel-body">
-                <h5 class="panel-title">100L de gasolina aditivada</h5>
-                <div class="panel-text description-item">Ganhe uma coxinha para lembrar da gente.</div>
+                <h5 class="panel-title">{{produto.nome}}</h5>
+                <div class="panel-text description-item">{{promocao?.descricao}}</div>
                 <div class="row bottom-row">
                     <div class="col-xs-6">
-                        <div class="price-cart-loja">R$ 300</div>
+                        <div class="price-cart-loja">R$ {{produto.valor}}</div>
                     </div>
                     <div class="col-xs-6 text-right">
                         <div class="btn btn-success purchaseButton" (click)="AddToCart()">
@@ -31,7 +31,7 @@
     <div class="container">
         <div class="row d-flex">
             <div class="col-xs-5 text-cart reset-right-padding-col">1 item(s) no carrinho</div>
-            <div class="col-xs-3 text-cart text-right reset-padding-col">R$ 300,00</div>
+            <div class="col-xs-3 text-cart text-right reset-padding-col">R$ {{produto.valor}}</div>
             <div class="col-xs-4">
                 <div [routerLink]="['/carrinho']" class="btn btn-block btn-success">Finalizar</div>
             </div>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { EstabelecimentosService } from '../services/Estabelecimentos/estabelecimentos.service';
 import { ProdutoService } from '../services/Produto/produto.service';
+import { PromocaoService } from '../services/Promocao/promocao.service';
 
 @Component({
   selector: 'app-loja',
@@ -9,10 +11,18 @@ import { ProdutoService } from '../services/Produto/produto.service';
 })
 export class LojaComponent implements OnInit {
   produtoServ = new ProdutoService();
-  produtos = [];
+  estabServ = new EstabelecimentosService();
+  promoServ = new PromocaoService();
+  productId = 0;
+  produto;
+  estabelecimento;
+  promocao;
 
   constructor() {
-    this.produtos = this.produtoServ.getServicos();
+    this.productId = 5;
+    this.produto = this.produtoServ.getById(this.productId);
+    this.estabelecimento = this.estabServ.getById(this.produto.estabelecimento);
+    this.promocao = this.promoServ.getByProduto(this.produto.id);
   }
 
   ngOnInit() {
