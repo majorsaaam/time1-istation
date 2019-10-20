@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { PagamentoCheckoutComponent } from './pagamento-checkout/pagamento-checkout.component';
 import { ConfirmarPedidoComponent } from './confirmar-pedido/confirmar-pedido.component';
 import { AvaliacaoComponent } from './avaliacao/avaliacao.component';
+import { RelatorioComponent } from './relatorio/relatorio.component';
+import { ChartsModule } from 'ng2-charts';
 
 const rotasApp: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,7 +20,8 @@ const rotasApp: Routes = [
   { path: 'loja', component: LojaComponent },
   { path: 'carrinho', component: PagamentoCheckoutComponent },
   { path: 'confirmacao', component: ConfirmarPedidoComponent },
-  { path: 'avaliacao', component: AvaliacaoComponent }
+  { path: 'avaliacao', component: AvaliacaoComponent },
+  { path: 'relatorios', component: RelatorioComponent }
 ];
 
 @NgModule({
@@ -28,14 +31,16 @@ const rotasApp: Routes = [
     HomeComponent,
     PagamentoCheckoutComponent,
     ConfirmarPedidoComponent,
-    AvaliacaoComponent
+    AvaliacaoComponent,
+    RelatorioComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(rotasApp),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA3eUcTNnCDcyDcKMqCCQIFxYnEw85b7mk'
-    })
+    }),
+    ChartsModule
   ],
   exports: [
   ],

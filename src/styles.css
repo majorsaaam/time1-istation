@@ -58,6 +58,26 @@
 .navbar-collapse a {
     color: #fff;
 }
+@media screen and (min-width: 768px) {
+    .container-page {
+        overflow-y: visible;
+    }
+    .navbar-toggler, #footer-app {
+        display: none;
+    }
+    .navbar-nav {
+        margin-left: 10px;
+    }
+    .navbar-nav>li {
+        padding-left: 20px;
+    }
+    .brand-header {
+        font-size: 30px;
+    }
+    .wrap-content-app {
+        overflow: visible;
+    }
+}
 .navbar-nav li {
     list-style: none;
 }

@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+    .row-relatorio {
+        margin-top: 60px;
+    }
+}
+.chart_wrapper {
+    margin-top: 50px;
+}
+.box_offer_creation {
+    padding: 30px 60px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+}
+.box_offer_creation .row:not(:last-child){
+    margin-bottom: 20px;
+}
