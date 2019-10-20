@@ -1,0 +1,58 @@
+.loja_span-title {
+    font-size: 18px;
+    font-family: roboto;
+    color: #000;
+}
+.loja_span-gray {
+    font-size: 14px;
+    color: rgb(139, 139, 139);
+    margin-bottom: 7px;
+}
+.bottom-row-panel {
+    margin-top: 10px;
+    text-align: right;
+}
+.panel-body .purchaseButton img {
+    width: 25px;
+    height: 25px;
+}
+.bottom-row {
+    margin-top: 10px;
+}
+.description-item {
+    color: rgb(100, 100, 100);
+}
+.price-cart-loja {
+    font-size: 20px;
+    line-height: 2em;
+    color: #2fd54e;
+}
+
+/* cart hover */
+.reset-padding-col {
+    padding: 0;
+}
+.reset-right-padding-col {
+    padding-right: 0;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+.hover-addToCart {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 30px 0px;
+    transform: translateY(0px);
+    transition: transform .5s;
+    border-top: 1px solid #eee;
+}
+.hover-addToCart .text-cart {
+    font-size: 14px;
+}
+.collapsed-cart {
+    transform: translateY(94px);
+}

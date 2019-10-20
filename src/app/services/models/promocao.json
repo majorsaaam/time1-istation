@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "msg": "Ganhe Coxinha de graça",
+        "descricao": "Ganhe uma coxinha para lembrar da gente.",
+        "estabelecimento": 1,
+        "produto": 5,
+        "adicionais": [
+            13
+        ]
+    },
+    {
+        "id": 2,
+        "valor": 5.00,
+        "msg": "R$5 EM LAVA JATO!",
+        "estabelecimento": 1,
+        "produto": 3
+    },
+    {
+        "id": 3,
+        "valor": 1.50,
+        "msg": "R$1.5 EM SANDUICHES!",
+        "estabelecimento": 2,
+        "produto": 8
+    },
+    {
+        "id": 4,
+        "valor": 0.08,
+        "msg": "R$0.08 EM ADITIVADA!",
+        "estabelecimento": 2,
+        "produto": 11
+    }
+]

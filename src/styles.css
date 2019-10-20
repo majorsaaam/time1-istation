@@ -1,0 +1,132 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+    font-family: renner;
+    src: url(assets/Renner-400-Book.ttf) format("truetype");
+}
+@font-face {
+    font-family: roboto;
+    src: url(assets/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(assets/Roboto-Light.ttf) format("truetype");
+}
+* {
+    font-family: renner;
+}
+.wrap-content-app {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+}
+.container-page {
+    margin: 14px;
+    height: 74%;
+    overflow-y: scroll;
+}
+.brand-header {
+    color: #14b0bf;
+}
+.menu-mobile-header {
+    background: none;
+    border: none;
+    right: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.menu-mobile-header img {
+    width: 30px;
+    height: 30px;
+}
+.navbar {
+    display: flex;
+    background-color: #fff;
+    height: 10%;
+    max-height: 50px;
+}
+.navbar-collapse {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    margin: 51px auto auto;
+    background: #14b0bf;
+    box-shadow: 0px 5px 5px 0px #E4E4E4;
+}
+.navbar-collapse a {
+    color: #fff;
+}
+@media screen and (min-width: 768px) {
+    .container-page {
+        overflow-y: visible;
+    }
+    .navbar-toggler, #footer-app {
+        display: none;
+    }
+    .navbar-nav {
+        margin-left: 10px;
+    }
+    .navbar-nav>li {
+        padding-left: 20px;
+    }
+    .brand-header {
+        font-size: 30px;
+    }
+    .wrap-content-app {
+        overflow: visible;
+    }
+}
+.navbar-nav li {
+    list-style: none;
+}
+.navbar-nav .nav-item {
+    line-height: 4rem;
+}
+#footer-app {
+    border-top: 1px solid rgb(230, 230, 230);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 12%;
+    min-height: 63px;
+    max-height: 65px;
+}
+.menu-mobile-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+.menu-mobile-footer li {
+    width: 100%;
+}
+.menu-mobile-footer li:not(:last-child) {
+    border-right: 1px solid #E4E4E4;
+}
+.menu-mobile-footer li a {
+    display: block;
+}
+.menu-mobile-footer img {
+    width: 20px;
+    height: 20px;
+}
+.menu-mobile-footer li a .row .col {
+    text-align: center;
+    color: #00a2b2;
+}
+
+.menu-mobile-footer li a .row .col img {
+    margin-bottom: 5px;
+}
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+    padding: 5px;
+    border: none;
+}
+.list-group-horizontal .list-group-item a {
+    font-size: 12px;
+}
