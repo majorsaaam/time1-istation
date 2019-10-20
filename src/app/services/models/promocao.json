@@ -2,8 +2,12 @@
     {
         "id": 1,
         "msg": "Ganhe Coxinha de graça",
+        "descricao": "Ganhe uma coxinha para lembrar da gente.",
         "estabelecimento": 1,
-        "produto": 5
+        "produto": 5,
+        "adicionais": [
+            13
+        ]
     },
     {
         "id": 2,

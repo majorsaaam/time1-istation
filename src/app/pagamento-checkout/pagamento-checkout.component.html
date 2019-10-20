@@ -1,33 +1,15 @@
 <div class="container-page">
     <div class="carrinho_span-title">
-        Seu carrinho (4 itens)
+        Seu carrinho ({{produtos.length}} itens)
     </div>
 
     <div class="carrinho_list-items">
         <div class="container">
             <ul class="cart-items">
-                <li class="cart-items_item">
+                <li *ngFor="let prod of produtos" class="cart-items_item">
                     <div class="row">
-                        <div class="col-xs-6 item-name">Lubrificante Lubrax</div>
-                        <div class="col-xs-6 item-price">R$ 21,30</div>
-                    </div>
-                </li>
-                <li class="cart-items_item">
-                    <div class="row">
-                        <div class="col-xs-6 item-name">Lavagem do tapete</div>
-                        <div class="col-xs-6 item-price">R$ 15,00</div>
-                    </div>
-                </li>
-                <li class="cart-items_item">
-                    <div class="row">
-                        <div class="col-xs-6 item-name">Troca óleo motor</div>
-                        <div class="col-xs-6 item-price">R$ 7,00</div>
-                    </div>
-                </li>
-                <li class="cart-items_item">
-                    <div class="row">
-                        <div class="col-xs-6 item-name">Óleo Lubrax</div>
-                        <div class="col-xs-6 item-price">R$ 27,00</div>
+                        <div class="col-xs-6 item-name">{{prod.nome}}</div>
+                        <div class="col-xs-6 item-price">R$ {{prod.valor}}</div>
                     </div>
                 </li>
             </ul>
@@ -38,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6">Total</div>
-                <div class="col-xs-6 text-right">R$ 70,30</div>
+                <div class="col-xs-6 text-right">R$ {{total()}}</div>
             </div>
         </div>
     </div>
