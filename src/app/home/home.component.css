@@ -20,3 +20,8 @@
 .panel-text .distancia-card-home {
     color: rgb(141, 141, 141);
 }
+.rating-store img {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}

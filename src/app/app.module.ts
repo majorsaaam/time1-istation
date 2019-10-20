@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LojaComponent } from './loja/loja.component';
 import { HomeComponent } from './home/home.component';
+import { PagamentoCheckoutComponent } from './pagamento-checkout/pagamento-checkout.component';
 
 const rotasApp: Routes = [
   { path: 'home', component: HomeComponent },
@@ -11,14 +12,16 @@ const rotasApp: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  { path: 'loja', component: LojaComponent }
+  { path: 'loja', component: LojaComponent },
+  { path: 'carrinho', component: PagamentoCheckoutComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LojaComponent,
-    HomeComponent
+    HomeComponent,
+    PagamentoCheckoutComponent
   ],
   imports: [
     BrowserModule,
