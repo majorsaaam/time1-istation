@@ -1,0 +1,59 @@
+<div class="container-page">
+    <div class="carrinho_span-title">
+        Seu carrinho ({{produtos.length}} itens)
+    </div>
+
+    <div class="carrinho_list-items">
+        <div class="container">
+            <ul class="cart-items">
+                <li *ngFor="let prod of produtos" class="cart-items_item">
+                    <div class="row">
+                        <div class="col-xs-6 item-name">{{prod.nome}}</div>
+                        <div class="col-xs-6 item-price">R$ {{prod.valor}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="carrinho_span-total">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">Total</div>
+                <div class="col-xs-6 text-right">R$ {{total()}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carrinho_preferred-payment">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">Pagamento selecionado</div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-xs-6"><img class="mastercard-icon" src="../../assets/mastercard-icon.png" alt=""> Final ****1234</div>
+                <div class="col-xs-6 text-center text-primary">Selecionar outro tipo de pagamento</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carrinho_finish-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div [routerLink]="['/confirmacao']" class="btn btn-success btn-block btn-lg">Fazer pedido</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carrinho_cancel-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="cancel-order-link text-danger">Cancelar pedido</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

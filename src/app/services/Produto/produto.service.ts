@@ -14,4 +14,13 @@ export class ProdutoService {
     const lista = this.produto;
     return lista;
   }
+
+  getById(id) {
+    return this.produto.find(x => x.id == id);
+  }
+
+  getServicos() {
+    const lista = this.produto.filter(x => x.servico);
+    return lista;
+  }
 }

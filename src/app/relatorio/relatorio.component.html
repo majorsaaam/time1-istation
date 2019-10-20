@@ -1,0 +1,142 @@
+<div class="container-page">
+
+    <div class="row">
+        <div class="col-md-6 row-relatorio">
+            <h3>Relatório de Produtos Mais Populares</h3>
+            <table class="table table-hover table_relatorio">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Visualizações</th>
+                        <th>Unid. vendidas</th>
+                        <th>Visualizações/vendas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Pão de queijo 6 unidades</td>
+                        <td>1370</td>
+                        <td>188</td>
+                        <td>6.91</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Coca-Cola 350ml</td>
+                        <td>1246</td>
+                        <td>162</td>
+                        <td>7.69</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Heineken long neck</td>
+                        <td>840</td>
+                        <td>124</td>
+                        <td>6.77</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Água Minalba s/ gás</td>
+                        <td>771</td>
+                        <td>101</td>
+                        <td>7.63</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Matte Leão 300ml</td>
+                        <td>476</td>
+                        <td>56</td>
+                        <td>8.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6 row-relatorio">
+            <h3>Relatório de Serviços Mais Populares</h3>
+            <table class="table table-hover table_relatorio">
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Visualizações</th>
+                        <th>Qntd. vendas</th>
+                        <th>Visualizações/vendas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Gasolina comum</td>
+                        <td>1964</td>
+                        <td>575</td>
+                        <td>3.41</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">GNV</td>
+                        <td>1321</td>
+                        <td>321</td>
+                        <td>4.11</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Etanol</td>
+                        <td>525</td>
+                        <td>83</td>
+                        <td>6.32</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Diesel S10</td>
+                        <td>323</td>
+                        <td>62</td>
+                        <td>5.20</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Lavagem veículo passeio ext.</td>
+                        <td>211</td>
+                        <td>43</td>
+                        <td>4.91</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row chart_wrapper">
+        <div class="col-md-6">
+            <h3>Performance de funcionários em outubro/2019</h3>
+            <div>
+                <div>
+                  <div style="display: block">
+                    <canvas baseChart
+                      [datasets]="barChartData"
+                      [labels]="barChartLabels"
+                      [options]="barChartOptions"
+                      [plugins]="barChartPlugins"
+                      [legend]="barChartLegend"
+                      [chartType]="barChartType">
+                    </canvas>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>Acesso rápido</h3>
+            <div class="box_offer_creation">
+                <div class="row">
+                    <div class="col">
+                        <div class="btn btn-success btn-block btn-lg">
+                            Gerar nova promoção
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="btn btn-primary btn-block btn-lg">
+                            Gerar relatório automatizado
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="btn btn-info btn-block btn-lg">
+                            Gerir itens e serviços da loja
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

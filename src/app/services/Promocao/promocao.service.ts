@@ -14,4 +14,9 @@ export class PromocaoService {
     const lista = this.promocao;
     return lista;
   }
+
+  getByProduto(id) {
+    const lista = this.promocao.find(x => x.produto === id);
+    return lista;
+  }
 }

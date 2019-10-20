@@ -1,0 +1,23 @@
+<div class="container-page">
+    <div class="confirmacao_span-title">
+        Obrigado! Agora é só retirar no posto.
+    </div>
+    <div class="confirmacao_span-address">
+        Avenida Oscar Niemeyer, 2000 - Santo Cristo, Rio de Janeiro - RJ, 20220-325
+    </div>
+
+    <agm-map id="map-to-station" [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+
+    <div class="confirmacao_btn-confirmar">
+        <div class="container">
+            <div class="descr text-center">Já chegou no {{estabelecimento.nome}}?</div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div [routerLink]="['/avaliacao']" class="btn btn-success btn-block btn-lg">Recebi meu pedido</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
