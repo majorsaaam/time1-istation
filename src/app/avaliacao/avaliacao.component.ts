@@ -21,6 +21,5 @@ export class AvaliacaoComponent implements OnInit {
       itemId: this.itemId,
       rating: rating
     });
-    this.hasBeenRated = true;
   }
 }
